@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(164, 236, 212);
+    margin: 0;
+    padding: 0;
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Logo {
+    display: flex;
+    justify-content: center;
+}
+
+div.BarraNav {
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    background-color: rgba(204, 134, 109, 0.35);
+    align-items: center;
+    justify-content: space-around;
+}
+
+.CartUser {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 15px;
+}
+
+div.Carrito {
+    display: flex;
+    padding-right: 15px;
+    align-items: center;
+}
+
+.MOIcon {
+    padding-top: 5%;
+}
+
+ul.ListaNav {
+    display: inline-flex;
+    justify-content: left;
+    padding: 0px 25px 0px 25px;
+    list-style: none;
+    align-items: center;
+}
+ul.ListaNav li:hover .ContinentList {
+    display: block;
+}
+ul.ListaNav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 0px 15px 0px 15px;
+}
+
+.SearchBar {
+    padding: 7px;
+    width:87%;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: solid 1px rgba(0, 0, 0, 0.5);
+}
+.SearchBar2 {
+    width: 100%;
+}
+
+.ContinentList {
+    display: none;
+    position: absolute;
+    background-color: rgb(202, 104, 68);
+    list-style: none;
+    border: solid 1.5px black;
+    padding: 5px;
+}
+.ContinentList li {
+    display: block;
+    padding: 10px;
+}
+.ContinentList li:hover ul{
+    display: block;
+}
+
+.SAList,
+.NAList,
+.AfricaList,
+.AsiaList,
+.EuropaList {
+    display: none;
+    position: absolute;
+    background-color: rgb(202, 104, 68);
+    list-style: none;
+    border: solid 1.5px black;
+    padding: 5px;
+    margin-left: 200px;
+    margin-top: -34px;
+    width: 160px;
+}
+.SAList li {
+    display: block;
+    padding: 10px;
+}
+
+div.ListaProductos {
+    background-color: rgba(255, 228, 196, 0.35);
+    padding: 25px;
+}
